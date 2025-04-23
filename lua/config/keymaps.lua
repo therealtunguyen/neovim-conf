@@ -99,6 +99,9 @@ vim.keymap.set("n", "<leader>e", "<Cmd>Neotree toggle<CR>")
 -- Noice keymaps
 vim.keymap.set("n", "<leader>nn", "<Cmd>NoiceDismiss<CR>")
 
+-- Telescope keymaps for switching themes
+vim.keymap.set("n", "[cl", "<Cmd>Telescope colorscheme<CR>", opts)
+
 -- LuaSnip keymaps
 -- Expand or jump in insert mode
 -- vim.cmd([[
