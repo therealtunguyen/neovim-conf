@@ -12,8 +12,8 @@ local opts = { noremap = true, silent = true }
 vim.keymap.set("i", "jk", "<Esc>", opts)
 
 -- Increment and decrement numbers
-vim.keymap.set("n", "+", "<C-a>", opts)
-vim.keymap.set("n", "-", "<C-x>", opts)
+vim.keymap.set("n", "-", "<C-a>", opts)
+vim.keymap.set("n", "+", "<C-x>", opts)
 
 -- Select all
 vim.keymap.set("n", "<C-a>", "ggVG", opts)
