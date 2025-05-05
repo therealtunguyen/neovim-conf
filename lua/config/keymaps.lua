@@ -12,8 +12,8 @@ local opts = { noremap = true, silent = true }
 vim.keymap.set("i", "jk", "<Esc>", opts)
 
 -- Increment and decrement numbers
-vim.keymap.set("n", "-", "<C-a>", opts)
-vim.keymap.set("n", "+", "<C-x>", opts)
+vim.keymap.set("n", "+", "<C-a>", opts)
+vim.keymap.set("n", "-", "<C-x>", opts)
 
 -- Select all
 vim.keymap.set("n", "<C-a>", "ggVG", opts)
@@ -64,7 +64,7 @@ vim.keymap.set("n", "<leader>tn", ":tabn<CR>", opts) --  go to next tab
 vim.keymap.set("n", "<leader>tp", ":tabp<CR>", opts) --  go to previous tab
 
 -- Toggle line wrapping
-vim.keymap.set("n", "<leader>lw", "<cmd>set wrap!<CR>", opts)
+vim.keymap.set("n", "<leader>wr", "<cmd>set wrap!<CR>", opts)
 
 -- Stay in indent mode
 vim.keymap.set("v", "<", "<gv", opts)

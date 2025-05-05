@@ -61,6 +61,10 @@ require("lazy").setup({
   },
 })
 
+vim.g.python3_host_prog = os.getenv("HOME") .. "/.venvs/nvim/bin/python"
+
+vim.g.lua_host_prog = "/usr/bin/lua5.1"
+
 vim.api.nvim_set_hl(0, "NeoTreeNormal", { bg = "NONE", ctermbg = "NONE" })
 vim.api.nvim_set_hl(0, "NeoTreeNormalNC", { bg = "NONE", ctermbg = "NONE" })
 
