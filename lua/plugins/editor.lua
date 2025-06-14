@@ -234,7 +234,13 @@ return {
 
   {
     "saghen/blink.cmp",
+    dependencies = {
+      "Kaiser-Yang/blink-cmp-avante",
+    },
     opts = {
+      keymap = {
+        preset = "super-tab",
+      },
       completion = {
         menu = {
           winblend = vim.o.pumblend,
@@ -243,6 +249,19 @@ return {
       signature = {
         window = {
           winblend = vim.o.pumblend,
+        },
+      },
+      sources = {
+        -- Add 'avante' to the list
+        default = { "avante", "lsp", "path", "buffer" },
+        providers = {
+          avante = {
+            module = "blink-cmp-avante",
+            name = "Avante",
+            opts = {
+              -- options for blink-cmp-avante
+            },
+          },
         },
       },
     },
