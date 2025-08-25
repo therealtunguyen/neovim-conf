@@ -102,6 +102,9 @@ vim.keymap.set("n", "<leader>nn", "<Cmd>NoiceDismiss<CR>")
 -- Telescope keymaps for switching themes
 vim.keymap.set("n", "[cl", "<Cmd>Telescope colorscheme<CR>", opts)
 
+-- Fast python block division insert
+vim.keymap.set("n", "cm", "i#%%<Esc>")
+
 -- LuaSnip keymaps
 -- Expand or jump in insert mode
 -- vim.cmd([[
